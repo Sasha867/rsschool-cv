@@ -32,6 +32,7 @@ function mergeArrays(arr1, arr2) {
   return setArr.sort((a, b) => a - b);
 }
 ```
+
 ## **EDUCATION**
 
 Secondary specialized education in the specialty of car repair and master of industrial training
