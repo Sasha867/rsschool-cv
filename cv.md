@@ -32,3 +32,15 @@ function mergeArrays(arr1, arr2) {
   return setArr.sort((a, b) => a - b);
 }
 ```
+## **EDUCATION**
+
+Secondary specialized education in the specialty of car repair and master of industrial training
+
+## **EXPERIENCE**
+
+For some time i worked in my specialty, then i mainly worked as a seller of non-food products(clothes) for individual entrepreneurs,which i do now.
+
+## **COURSES**
+
+**IT academy "Step" | Front-end developer**
+_Oct 2021 - Nov 2022_
