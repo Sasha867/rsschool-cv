@@ -20,3 +20,15 @@ Phone: +375(297363410)
 - Highly organized
 - Good communication and teamwork skills
 - Creative approach to work
+
+## **CODE EXAMPLE**
+
+- Task: "Merge two sorted arrays into one"
+
+```javascript
+function mergeArrays(arr1, arr2) {
+  const concatArr = arr1.concat(arr2);
+  const setArr = Array.from(new Set(concatArr));
+  return setArr.sort((a, b) => a - b);
+}
+```
