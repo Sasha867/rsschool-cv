@@ -7,7 +7,31 @@
   box-sizing: border-box;
 }
 
-body{
-    font-family: 'Jost', sans-serif;
-    min-height: 100vh;
+body {
+  font-family: "Jost", sans-serif;
+  min-height: 100vh;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  list-style: none;
+ 
+}
+
+.nav-link {
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: rgb(2, 126, 249);
+}
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
 }
