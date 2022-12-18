@@ -165,11 +165,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo-rs {
   width: 120px;
   height: 45px;
+  margin-left: 15px;
 }
 
 .footer {
@@ -211,5 +213,17 @@ body {
 @media (max-width: 555px) {
   .code {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 410px) {
+  .container-footer {
+    flex-direction: column;
+  }
+  .logo-rs {
+    margin-top: 10px;
+  }
+  .code {
+    font-size: 12px;
   }
 }
