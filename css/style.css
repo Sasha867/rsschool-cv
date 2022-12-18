@@ -177,4 +177,10 @@ body {
   text-decoration: none;
   margin-left: 15px;
   color: rgb(233, 197, 149);
+  transition: 0.7s;
+}
+
+.link-git:hover {
+  font-size: 20px;
+  color: rgb(241, 152, 36);
 }
