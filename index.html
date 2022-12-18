@@ -51,24 +51,24 @@
     </header>
     <main class="main">
       <div class="container-left">
-        <div class="photo"></div>
-        <section class="section">
+        <section class="section-left">
+          <div class="photo"></div>
           <h1 class="section-title-left-h1">Alexandr Lozichny</h1>
         </section>
-        <section class="section" id="contacts">
+        <section class="section-left" id="contacts">
           <h2 class="section-title-left">Contacts</h2>
           <ul class="contact-list">
             <li>Gomel, Belarus</li>
             <li>
               Email:
-              <a class="mail" href="mailto:aleksandrlozicnyj@gmail.com"
+              <a class="link-contacts" href="mailto:aleksandrlozicnyj@gmail.com"
                 >aleksandrlozicnyj@gmail.com</a
               >
             </li>
             <li>
               Github:
               <a
-                class="git"
+                class="link-contacts"
                 target="_blank"
                 href="https://github.com/Sasha867?tab=repositories"
                 >Sasha867</a
@@ -76,15 +76,37 @@
             </li>
             <li>
               Telegram:
-              <a class="telegram" target="_blank" href="https://t.me/Tank866"
+              <a
+                class="link-contacts"
+                target="_blank"
+                href="https://t.me/Tank866"
                 >@Tank866</a
+              >
+            </li>
+            <li>
+              Discord:
+              <a
+                class="link-contacts"
+                href="https://discord.com/channels/@me"
+                target="_blank"
+                >Sasha867#7759</a
               >
             </li>
           </ul>
         </section>
-        <section class="section" id="skills">
+        <section class="section-left" id="skills">
           <h2 class="section-title-left">Skills</h2>
-          <ul></ul>
+          <ul class="list-skills">
+            <li>HTML5</li>
+            <li>CSS, SCSS</li>
+            <li>React</li>
+            <li>Firebase</li>
+            <li>Redux Toolkit</li>
+            <li>Git, Github</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Figma</li>
+          </ul>
         </section>
       </div>
       <div class="container-right">
@@ -108,8 +130,8 @@
                 >
               </li>
               <li>
-                Special slills:
-                <ul type="square">
+                Special skills:
+                <ul class="list-special-skills">
                   <li>Higly organized</li>
                   <li>Good communication and teamwork skills</li>
                   <li>Creative approach to work</li>
@@ -117,24 +139,59 @@
               </li>
             </ol>
           </ul>
+          <hr class="hr" />
         </section>
         <section class="section" id="education">
           <h2 class="section-title-right">Education</h2>
+          <p>
+            Secondary specialized education in the specialty of car repair and
+            master of industrial training.
+          </p>
         </section>
+        <hr class="hr" />
         <section class="section" id="experience">
           <h2 class="section-title-right">Experience</h2>
+          <p>
+            For some time i worked in my specialty, then i mainly worked as a
+            seller of non-food products (clothes) for individual enterpreneurs,
+            which i do now.
+          </p>
         </section>
+        <hr class="hr" />
         <section class="section" id="code">
           <h2 class="section-title-right">Code</h2>
+          <p>
+            Task: "Merge two sorted arrays into one". <br />
+            function mergeArrays(arr1, arr2) {<br />
+            &nbsp;const concatArr = arr1.concat(arr2);<br />
+            &nbsp;const setArr = Array.from(new Set(concatArr));<br />
+            &nbsp;return setArr.sort((a, b) => a - b);<br />
+            }
+          </p>
         </section>
+        <hr class="hr" />
         <section class="section" id="courses">
           <h2 class="section-title-right">Courses</h2>
+          <ul class="list-courses">
+            <li class="item-courses">
+              IT Academy "Step" | Front-end developer <br />
+              <span class="data-courses">Oct 2021-Nov 2022</span>
+            </li>
+            <li class="item-courses">
+              RS School | «JavaScript/Front-end» <br />
+              <span class="data-courses">Dec 2022</span>
+            </li>
+          </ul>
         </section>
+        <hr class="hr" />
         <section class="section" id="english">
           <h2 class="section-title-right">English</h2>
+          <p>B1-Pre-Intermediate</p>
         </section>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div></div>
+    </footer>
   </body>
 </html>

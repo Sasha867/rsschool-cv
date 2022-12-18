@@ -16,7 +16,8 @@ body {
   font-family: "Jost", sans-serif;
   min-height: 100vh;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
+  list-style: inside;
 }
 
 .nav-list {
@@ -29,7 +30,6 @@ body {
 }
 
 .nav-link {
-  font-size: 20px;
   font-weight: 400;
   padding: 0 20px;
   line-height: 50px;
@@ -38,26 +38,22 @@ body {
 }
 
 .main {
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
-}
-
-.container-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
-  padding: 40px;
 }
 
 .container-left {
   display: flex;
-  width: 35%;
+  width: 36%;
+  flex-direction: column;
+  background-color: hsl(206, 45%, 38%);
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.section-left {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: hsl(206, 45%, 38%);
-  height: 90vh;
 }
 
 .photo {
@@ -67,41 +63,7 @@ body {
   background-image: url("../assets/img/photo-r.png");
   background-position: center;
   border-radius: 50%;
-  box-shadow: 0 0 0 0, 0 0 9px rgb(197, 197, 197);
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.contact-list {
-  color: #ffff;
-  list-style: none;
-}
-
-.mail,
-.git,
-.telegram {
-  text-decoration: none;
-  color: rgb(233, 197, 149);
-  transition: 0.4s;
-}
-
-.mail:hover,
-.git:hover,
-.telegram:hover {
-  font-size: 20px;
-}
-
-.section-title-right {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  margin: 30px 0px 15px 0px;
+  box-shadow: 0 0 0 0, 0 0 9px rgb(209, 209, 209);
 }
 
 .section-title-left-h1 {
@@ -122,6 +84,69 @@ body {
   margin: 30px 0px 15px 0px;
 }
 
-.project-link{
- color:  rgb(233, 197, 149);
+.contact-list {
+  color: #ffff;
+  list-style: none;
+}
+
+.link-contacts {
+  text-decoration: none;
+  color: rgb(233, 197, 149);
+  transition: 0.7s;
+}
+
+.link-contacts:hover {
+  font-size: 20px;
+  color: rgb(241, 152, 36);
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 40px;
+}
+
+.section-title-right {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  margin: 30px 0px 15px 0px;
+}
+
+.project-link {
+  color: rgb(234, 191, 136);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.project-link:hover {
+  color: rgb(241, 152, 36);
+}
+
+.hr {
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid hsl(206, 45%, 38%);
+}
+
+.list-special-skills {
+  list-style: inside square;
+  margin-left: 15px;
+}
+
+.item-courses {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.data-courses {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.list-skills {
+  list-style: square;
+  color: #ffff;
 }
