@@ -151,6 +151,11 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.code {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .list-skills {
   list-style: square;
   color: #ffff;
@@ -182,4 +187,29 @@ body {
 
 .link-git:hover {
   font-size: 20px;
+}
+
+@media (max-width: 912px) {
+  .section-title-left-h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 810px) {
+  .main {
+    flex-wrap: wrap;
+  }
+  .container-left {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .container-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 555px) {
+  .code {
+    font-size: 14px;
+  }
 }
