@@ -160,14 +160,16 @@
         <hr class="hr" />
         <section class="section" id="code">
           <h2 class="section-title-right">Code</h2>
-          <p>
-            Task: "Merge two sorted arrays into one". <br />
-            function mergeArrays(arr1, arr2) {<br />
-            &nbsp;const concatArr = arr1.concat(arr2);<br />
-            &nbsp;const setArr = Array.from(new Set(concatArr));<br />
-            &nbsp;return setArr.sort((a, b) => a - b);<br />
-            }
-          </p>
+          <p>Task: "Merge two sorted arrays into one"</p>
+          <pre>
+            <code>
+              function mergeArrays(arr1, arr2) {
+                const concatArr = arr1.concat(arr2);
+                const setArr = Array.from(new Set(concatArr));
+               return setArr.sort((a, b) => a - b);
+              }
+            </code>
+          </pre>
         </section>
         <hr class="hr" />
         <section class="section" id="courses">
@@ -191,7 +193,27 @@
       </div>
     </main>
     <footer class="footer">
-      <div></div>
+      <div class="container-footer">
+        <div>
+          <span
+            >2022
+            <a
+              class="link-git"
+              target="_blank"
+              href="https://github.com/Sasha867"
+              >Github/Sasha867</a
+            ></span
+          >
+        </div>
+        <div>
+          <a class="link-rs school" target="_blank" href="https://rs.school/js/"
+            ><img
+              class="logo-rs"
+              src="./assets/img/rs_school_js.svg"
+              alt="logo RS School"
+          /></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

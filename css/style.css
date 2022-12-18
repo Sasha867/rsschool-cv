@@ -35,6 +35,11 @@ body {
   line-height: 50px;
   text-decoration: none;
   color: #ffff;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  box-shadow: 2px 2px 0px 1px hsl(204, 6%, 83%);
 }
 
 .main {
@@ -46,7 +51,7 @@ body {
   width: 36%;
   flex-direction: column;
   background-color: hsl(206, 45%, 38%);
-  min-height: 100vh;
+  min-height: 100%;
   padding: 10px;
 }
 
@@ -149,4 +154,27 @@ body {
 .list-skills {
   list-style: square;
   color: #ffff;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-rs {
+  width: 120px;
+  height: 45px;
+}
+
+.footer {
+  padding: 5px 20px 5px 20px;
+  border-bottom: 4px solid hsl(206, 45%, 38%);
+  margin-bottom: 30px;
+}
+
+.link-git {
+  text-decoration: none;
+  margin-left: 15px;
+  color: rgb(233, 197, 149);
 }
