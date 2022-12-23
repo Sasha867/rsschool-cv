@@ -20,12 +20,15 @@ body {
   list-style: inside;
 }
 
+.header-container {
+  background-color: hsl(206, 45%, 38%);
+}
+
 .nav-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: hsl(206, 45%, 38%);
   list-style: none;
 }
 
@@ -40,6 +43,25 @@ body {
 
 .nav-link:hover {
   box-shadow: 2px 2px 0px 1px hsl(204, 6%, 83%);
+}
+
+.toggle-bars {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.bars-line {
+  width: 80%;
+  height: 2px;
+  border-radius: 2px;
+  margin-top: 8px;
+  background-color: #fff;
 }
 
 .main {
@@ -213,6 +235,15 @@ body {
   }
   .container-right {
     width: 100%;
+  }
+  .toggle-bars {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+  .header-container {
+    padding: 0 20px;
   }
 }
 
