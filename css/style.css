@@ -217,7 +217,7 @@ body {
   border-radius: 2px;
   margin-top: 8px;
   background-color: #fff;
-  z-index: 3;
+  z-index: 15;
 }
 
 .burger-bar.close-bar .bar-line1 {
@@ -233,7 +233,7 @@ body {
 }
 
 @media (max-width: 912px) {
-  .section-title-left-h1 {
+  .section-title-left-profile {
     text-align: center;
   }
 }
@@ -263,10 +263,10 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 115vh;
     min-height: 300px;
     flex-direction: column;
     background-color: hsl(206, 45%, 38%);
