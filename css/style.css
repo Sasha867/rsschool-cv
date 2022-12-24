@@ -20,6 +20,11 @@ body {
   list-style: inside;
 }
 
+a {
+  color: rgb(240, 176, 91);
+  text-decoration: none;
+}
+
 .header-container {
   background-color: hsl(206, 45%, 38%);
 }
@@ -127,17 +132,6 @@ body {
   margin: 30px 0px 15px 0px;
 }
 
-.project-link {
-  color: rgb(240, 176, 91);
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-.project-link:hover {
-  color: rgb(255, 136, 0);
-  box-shadow: 0 2px 0 0 rgb(241, 152, 36, 0.7);
-}
-
 .hr {
   margin-top: 5px;
   width: 100%;
@@ -188,14 +182,20 @@ body {
   margin-bottom: 30px;
 }
 
+.project-link,
+.link-english {
+  transition: 0.5s;
+}
+
 .link-git {
-  text-decoration: none;
   margin-left: 15px;
   color: rgb(241, 152, 36);
   transition: 0.7s;
 }
 
-.link-git:hover {
+.link-git:hover,
+.link-english:hover,
+.project-link:hover {
   color: rgb(255, 136, 0);
   box-shadow: 0 2px 0 0 rgb(241, 152, 36, 0.7);
 }
@@ -232,6 +232,10 @@ body {
   transform: rotate(45deg) translate(-9px, -7px);
 }
 
+.list-skills.close-bar {
+  display: none;
+}
+
 @media (max-width: 912px) {
   .section-title-left-profile {
     text-align: center;
@@ -266,7 +270,7 @@ body {
     z-index: 10;
     display: flex;
     width: 100%;
-    height: 115vh;
+    height: 100vh;
     min-height: 300px;
     flex-direction: column;
     background-color: hsl(206, 45%, 38%);
