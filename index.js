@@ -1,7 +1,10 @@
 const burgerBar = document.getElementById("burgerBar");
 const nav = document.querySelector(".nav");
 const navList = document.querySelector(".nav-list");
-const navItems = document.querySelector(".nav-item");
+const navItems = document.querySelectorAll(".nav-item");
+
+console.log(navItems);
+console.log(typeof navItems);
 
 burgerBar.addEventListener("click", toggler);
 
@@ -10,3 +13,13 @@ function toggler() {
   nav.classList.toggle("close-bar");
   navList.classList.toggle("close-bar");
 }
+
+function closeBar() {
+  setTimeout(() => {
+    burgerBar.classList.remove("close-bar");
+    nav.classList.remove("close-bar");
+    navList.classList.remove("close-bar");
+  }, 500);
+}
+
+navItems.forEach((el) => el.addEventListener("click", closeBar));
